@@ -19,6 +19,7 @@ header{
     color: var(--negro);
     padding: 10px 20px;
     position: relative;
+
 }
 
 nav{
@@ -27,10 +28,12 @@ nav{
     align-items: center;
 }
 
-h1{
-    font-size: 40px;
-    font-weight: bold;
+.logo{
+    width: 180px;
+    height: auto;
 }
+
+
 
 .opciones-menu{
     list-style: none;
@@ -129,6 +132,7 @@ margin-top: 0px;
     box-sizing: border-box;     
     height: 500px;
   
+  
 }
 
 /* Cada contenedor de idioma */
@@ -140,13 +144,21 @@ margin-top: 0px;
     border-radius: 8px;         /* opcional, bordes redondeados */
     margin: 0 10px;         
     height: 80%;
+      border: 2px var(--negro) solid ;
 }
 
 .container-idioma button{
     width: 40%;
     height: 10%;
+    background-color: var(--azul-oscuro);
+    color: var(--Blanco);
+    border-radius: 2px;
+ cursor: pointer;
 }
 
+.container-idioma button:hover{
+    background-color: var(--cafe);
+}
 
 .btn-whatsapp {
     position: fixed;     /* ✔ siempre flotante */
@@ -162,6 +174,16 @@ margin-top: 0px;
     height: 100%;
 }
 
+
+.footer{
+  display: flex;
+  width: 100%;
+  background-color: var(--gris-claro);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: auto; /
+}
 
 @media (max-width: 768px){
     header{
@@ -195,8 +217,9 @@ margin-top: 0px;
         display: flex;
         background-color: var(--gris-claro);
         z-index: 9999;
-    }}
+    }
 
+}
     
 
     @media (max-width: 1050px){
@@ -214,6 +237,8 @@ margin-top: 0px;
         flex-direction: column;
         gap: 20px;
     }
+
 }
+    
 
 
