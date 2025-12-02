@@ -1,0 +1,219 @@
+:root{
+    --gris-claro: gainsboro;
+    --negro: black;
+    --cafe: brown;
+    --Blanco: white;
+    --azul-oscuro: darkblue;
+}
+
+
+
+body{
+ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: gainsboro;
+    color: var(--negro);
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.opciones-menu{
+    list-style: none;
+    display: flex;
+    gap: 35px
+}
+
+.opciones-menu a{
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 18px;
+}
+
+.opciones-menu a:hover{
+    color: var(--cafe);
+}
+
+.menu{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.linea{
+    width: 25px;
+    height: 3px;
+    background-color: var(--negro);
+    margin: 4px 0;
+    transition: o.3s;
+
+}
+
+.imagen-uno{
+background-image: url(imagen1.png);
+height: 500px;
+width: 100%;
+margin-top: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+     display: flex;            /* Esto permite centrar el contenedor */
+    
+    align-items: center;      /* Centrado vertical */
+    position: relative;       /* Importante */
+}
+
+
+
+.container-imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    opacity: 80%;
+    width: 30%;
+    height: 48%;
+    margin-top: -27px;
+    margin-left: 95px;
+    border-radius: 2%;
+    border: 2px solid var(--negro);
+    
+}
+
+.container-imagen h2{
+    font-size: 35px;
+}
+
+.container-imagen button{
+    height: 16%;
+    width: 28%;
+  background-color: var(--azul-oscuro);
+  color: var(--Blanco);
+  border: 1px solid var(--negro);
+  border-radius: 5%;
+  cursor: pointer;
+   
+}
+
+.container-imagen button:hover{
+    background-color: brown;
+}
+
+.titulo {
+  text-align: center;
+    font-size: 5vw; /* 5% del ancho de la pantalla */
+    margin-bottom: 20px;
+    
+}
+
+.idiomas {
+   display: flex;              /* activa flexbox */
+    justify-content: space-between; /* distribuye los elementos horizontalmente */
+    align-items: center;      /* centra los elementos verticalmente dentro del contenedor */
+    width: 100%;                /* ocupa todo el ancho disponible */
+    padding: 0 20px;            /* margen interno opcional */
+    box-sizing: border-box;     
+    height: 500px;
+  
+}
+
+/* Cada contenedor de idioma */
+.container-idioma {
+     flex: 1;                    /* cada elemento ocupa el mismo ancho */
+    text-align: center;          /* centra el texto dentro del item */
+    padding: 20px;
+    border: 1px solid #ccc;     /* opcional, para ver los bordes */
+    border-radius: 8px;         /* opcional, bordes redondeados */
+    margin: 0 10px;         
+    height: 80%;
+}
+
+.container-idioma button{
+    width: 40%;
+    height: 10%;
+}
+
+
+.btn-whatsapp {
+    position: fixed;     /* ✔ siempre flotante */
+    bottom: 20px;        /* distancia desde abajo */
+    right: 20px;         /* distancia desde la derecha */
+    width: 70px;         /* tamaño del botón */
+    height: 70px;
+    z-index: 9999;       /* ✔ siempre encima de otros elementos */
+}
+
+.img-logo-whatsapp {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 768px){
+    header{
+        padding: 10px 20px;
+    }
+    nav{
+        justify-content: space-between;
+        
+    }
+
+    .opciones-menu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--gris-claro);
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .opciones-menu li{
+        margin: 15px;
+    }
+
+    .menu{
+        display:flex;
+    }
+    
+    .opciones-menu.show{
+        display: flex;
+        background-color: var(--gris-claro);
+        z-index: 9999;
+    }}
+
+    
+
+    @media (max-width: 1050px){
+
+    .imagen-uno{
+        align-items: center;
+    }
+
+    .container-imagen{
+        width: 60%;
+    height: 60%;
+    }
+
+    .idiomas{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
