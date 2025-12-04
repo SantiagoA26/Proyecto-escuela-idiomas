@@ -6,13 +6,24 @@
     --azul-oscuro: darkblue;
 }
 
-
+* {
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body{
- box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
 }
+
+main { 
+flex: 1;
+    padding-bottom: 9%;
+}
+
+
 
 header{
     background-color: gainsboro;
@@ -74,10 +85,10 @@ margin-top: 0px;
     background-repeat: no-repeat;
     background-size: cover;
 
-     display: flex;            /* Esto permite centrar el contenedor */
+     display: flex;           
     
-    align-items: center;      /* Centrado vertical */
-    position: relative;       /* Importante */
+    align-items: center;      
+    position: relative;       
 }
 
 
@@ -94,11 +105,14 @@ margin-top: 0px;
     margin-left: 95px;
     border-radius: 2%;
     border: 2px solid var(--negro);
+    justify-content: space-between;
+    padding: 10px 20px;
     
 }
 
 .container-imagen h2{
     font-size: 35px;
+      
 }
 
 .container-imagen button{
@@ -118,33 +132,38 @@ margin-top: 0px;
 
 .titulo {
   text-align: center;
-    font-size: 5vw; /* 5% del ancho de la pantalla */
+    font-size: 5vw; 
     margin-bottom: 20px;
     
 }
 
 .idiomas {
-   display: flex;              /* activa flexbox */
-    justify-content: space-between; /* distribuye los elementos horizontalmente */
-    align-items: center;      /* centra los elementos verticalmente dentro del contenedor */
-    width: 100%;                /* ocupa todo el ancho disponible */
-    padding: 0 20px;            /* margen interno opcional */
+   display: flex;             
+    justify-content: space-between; 
+    align-items: center;     
+    width: 100%;                
+    padding: 0 20px;           
     box-sizing: border-box;     
-    height: 500px;
-  
+    height: auto;
+    gap: 4%;
+
   
 }
 
-/* Cada contenedor de idioma */
+
 .container-idioma {
-     flex: 1;                    /* cada elemento ocupa el mismo ancho */
-    text-align: center;          /* centra el texto dentro del item */
-    padding: 20px;
-    border: 1px solid #ccc;     /* opcional, para ver los bordes */
-    border-radius: 8px;         /* opcional, bordes redondeados */
-    margin: 0 10px;         
+     flex: 1;                  
+    text-align: center;          
+   
+    border: 1px solid #ccc;     
+    border-radius: 8px;         
+           
     height: 80%;
       border: 2px var(--negro) solid ;
+      justify-content: space-between;
+      padding: 20px 10px;
+      
+      
 }
 
 .container-idioma button{
@@ -161,12 +180,12 @@ margin-top: 0px;
 }
 
 .btn-whatsapp {
-    position: fixed;     /* ✔ siempre flotante */
-    bottom: 20px;        /* distancia desde abajo */
-    right: 20px;         /* distancia desde la derecha */
-    width: 70px;         /* tamaño del botón */
+    position: fixed;     
+    bottom: 20px;       
+    right: 20px;       
+    width: 70px;         
     height: 70px;
-    z-index: 9999;       /* ✔ siempre encima de otros elementos */
+    z-index: 9999;       
 }
 
 .img-logo-whatsapp {
@@ -175,14 +194,78 @@ margin-top: 0px;
 }
 
 
-.footer{
-  display: flex;
-  width: 100%;
-  background-color: var(--gris-claro);
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  height: auto; /
+footer{
+    background-color: var(--gris-claro);
+display: flex;
+flex-direction:column;
+text-align: center;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+footer .social{
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 15px 0;
+
+}
+
+footer .social a{
+    color: var(--Blanco);
+    background-color: var(--negro);
+    padding: 5px;
+    border-radius: 50%;
+
+}
+
+footer .social a i{
+    font-size: 20px;
+    transition: all .3s ease;
+
+}
+
+
+footer .social a i:hover{
+    transform: translateY(-2px);
+}
+
+footer .nav-section{
+    margin-bottom: 15px;
+}
+
+footer .nav-section nav {
+    display: flex;
+    justify-content: center;
+    gap:35px;
+}
+
+footer .nav-section nav a{
+    color: var(--negro);
+    cursor: pointer;
+}
+
+footer .copy{
+    padding: 15px 0;
+    background-color: var(--negro);
+    color: var(--Blanco)
+}
+
+@media (max-width: 430px){
+    .nav-section nav{
+        flex-direction: column;
+
+    }
+
+   .container-imagen{
+    height: auto;
+   }
+    .container-imagen h2{
+    font-size: 20px;
+    }
 }
 
 @media (max-width: 768px){
