@@ -78,7 +78,7 @@ nav{
 }
 
 .imagen-uno{
-background-image: url(imagen1.png);
+background-image: url(../img/imagen1.png);
 height: 500px;
 width: 100%;
 margin-top: 0px;
