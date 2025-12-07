@@ -254,6 +254,48 @@ footer .copy{
     color: var(--Blanco)
 }
 
+:root{
+    --gris-claro: #f2f2f2;
+    --negro: #000;
+    --azul-oscuro: darkblue;
+    --blanco: #fff;
+}
+
+.container-principal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container-informacion{
+    width: 70%;
+    background: var(--gris-claro);
+    border: 2px solid var(--negro);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 120px;
+}
+
+.container-informacion h3{
+    margin-top: 0;
+}
+
+.container-informacion p{
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px){
+    .container-informacion{
+        width: 90%;
+    }
+}
+
 @media (max-width: 430px){
     .nav-section nav{
         flex-direction: column;
