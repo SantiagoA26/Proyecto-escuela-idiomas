@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c00e51a0bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+         <div class="form-container">
+        <h2>Formulario de Inscripción</h2>
+
+        <form action="#" method="post">
+
+            <label for="nombre">Nombre(s):</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="celular">Número de celular:</label>
+            <input type="tel" id="celular" name="celular" required>
+
+            <label for="direccion">Dirección de residencia:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="clase">Idioma a inscribirse:</label>
+            <select id="clase" name="clase" required>
+                <option value="">Seleccione una opción</option>
+                <option value="ingles">Inglés</option>
+                <option value="frances">Francés</option>
+                <option value="portugues">Portugués</option>
+            </select>
+
+            <label for="tipo-documento">Tipo de documento:</label>
+            <select id="tipo-documento" name="tipo-documento" required>
+                <option value="">Seleccione una opción</option>
+                <option value="cc">Cédula de ciudadanía</option>
+                <option value="ti">Tarjeta de identidad</option>
+                <option value="ce">Cédula de extranjería</option>
+                <option value="pp">Pasaporte</option>
+            </select>
+
+            <label for="numero-documento">Número de documento:</label>
+            <input type="text" id="numero-documento" name="numero-documento" required>
+
+            <button type="submit" class="btn">Realizar Pago</button>
+
+        </form>
+    </div>
+
+    </main>
+    <div id="footer"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>

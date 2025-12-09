@@ -254,12 +254,7 @@ footer .copy{
     color: var(--Blanco)
 }
 
-:root{
-    --gris-claro: #f2f2f2;
-    --negro: #000;
-    --azul-oscuro: darkblue;
-    --blanco: #fff;
-}
+
 
 .container-principal{
     width: 100%;
@@ -275,7 +270,7 @@ footer .copy{
 .container-informacion{
     width: 70%;
     background: var(--gris-claro);
-    border: 2px solid var(--negro);
+    border: 2px solid var(--azul-oscuro);
     border-radius: 8px;
     padding: 20px;
     box-sizing: border-box;
@@ -288,6 +283,150 @@ footer .copy{
 
 .container-informacion p{
     margin-bottom: 0;
+}
+
+
+.form-container {
+    width: 100%;
+    max-width: 600px;        
+    min-width: 300px;      
+    margin: 40px auto;
+    padding: 25px;
+    background: var(--gris-claro);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--azul-oscuro);
+    border-radius: 5px;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--azul-oscuro);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: var(--cafe);
+}
+
+
+.pqrs-container {
+    width: 100%;
+    max-width: 600px;       
+    min-width: 300px;       
+    margin: 40px auto;
+    padding: 25px;
+    background: #f3f3f3;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.pqrs-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pqrs-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.pqrs-select,
+.pqrs-textarea,
+.pqrs-file {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--azul-oscuro);
+    border-radius: 6px;
+}
+
+.pqrs-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--azul-oscuro);
+    color: var(--Blanco);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.pqrs-btn:hover {
+    background: var(--cafe);
+}
+
+
+@media (max-width: 480px) {
+     .form-container {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    .form-container h2 {
+        font-size: 20px;
+    }
+
+    form input,
+    form select {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+
+      .pqrs-container {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    .pqrs-container h2 {
+        font-size: 20px;
+    }
+
+    .pqrs-select,
+    .pqrs-textarea,
+    .pqrs-file {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .pqrs-btn {
+        padding: 10px;
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 600px){
